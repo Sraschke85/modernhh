@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/chat.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "GPTAPI": "@gptapi"
+  }
+}
