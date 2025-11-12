@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Homecare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-2">
+        <img src="assets/img/logo.svg" alt="Modern Homecare" class="h-10 w-10" />
+        <span class="text-2xl font-semibold text-sky-700">Modern Homecare</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-slate-600 font-medium">
+        <a href="#services" class="hover:text-sky-700">Services</a>
+        <a href="#about" class="hover:text-sky-700">About</a>
+        <a href="#contact" class="hover:text-sky-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-br from-sky-50 to-sky-100 py-20 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+        Compassionate care, right where you belong — at home.
+      </h1>
+      <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
+        Our team of skilled nurses and therapists bring quality healthcare to your doorstep, helping you heal and thrive in comfort.
+      </p>
+      <div class="mt-8">
+        <a href="#contact" class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-lg shadow-md">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center text-slate-900 mb-8">Our Services</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="service-card"><h3>Nursing Care</h3><p>Professional medical care for recovery, wound management, and chronic conditions.</p></div>
+      <div class="service-card"><h3>Therapy Services</h3><p>Physical, speech, and occupational therapy to restore strength and independence.</p></div>
+      <div class="service-card"><h3>Health Aide Support</h3><p>Personal care assistance to maintain comfort and dignity at home.</p></div>
+      <div class="service-card"><h3>Oncology Support</h3><p>Specialized in-home support for patients undergoing cancer treatment.</p></div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <img src="assets/img/care.png" alt="Care" class="rounded-xl shadow-lg"/>
+      <div>
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">Why Choose Modern Homecare</h2>
+        <ul class="space-y-3 text-slate-600">
+          <li>• Licensed professionals dedicated to compassionate care</li>
+          <li>• Customized care plans for each patient’s needs</li>
+          <li>• Serving Houston, TX and surrounding communities</li>
+          <li>• 24/7 support line for patients and families</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center text-slate-900 mb-6">Get In Touch</h2>
+    <p class="text-center text-slate-600 mb-10">Call us, email us, or send a message—we’re here to help you and your loved ones.</p>
+    <div class="text-center">
+      <p><strong>Phone:</strong> (281) 501-0350</p>
+      <p><strong>Email:</strong> <a href="mailto:intake@modernhh.com" class="text-sky-700 underline">intake@modernhh.com</a></p>
+      <p><strong>Address:</strong> 9800 Richmond Ave, Suite 427, Houston, TX 77042</p>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-200 py-6 text-center">
+    <p>© <span id="y"></span> Modern Homecare • Compassion. Dignity. Care.</p>
+  </footer>
+
+  <!-- Chat -->
+  <button id="chat-toggle" class="chat-toggle" title="Chat with us">💬</button>
+  <div id="chat-panel" class="chat-panel hidden">
+    <div class="chat-header">
+      <strong>Modern Homecare Assistant</strong>
+      <button id="chat-close">×</button>
+    </div>
+    <div id="chat-log" class="chat-log">
+      <div class="msg bot">Hi there, I’m your care assistant. How can I help you today?</div>
+    </div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" placeholder="Type your question..." required />
+      <button>Send</button>
+    </form>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/chat.js"></script>
+</body>
+</html>
