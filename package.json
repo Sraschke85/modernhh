@@ -1,0 +1,12 @@
+{
+  "name": "modernhh",
+  "version": "1.0.0",
+  "description": "Modern Homecare website with AI chatbot",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000"
+  },
+  "keywords": ["healthcare", "chatbot", "ai"],
+  "author": "",
+  "license": "ISC"
+}

@@ -5,9 +5,10 @@ const form=document.getElementById('chat-form');
 const input=document.getElementById('chat-input');
 const log=document.getElementById('chat-log');
 
-// OpenAI API Configuration
-const OPENAI_API_KEY = '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';
-const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions';
+// API Configuration - uses backend API that securely stores the key
+const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? '/api/chat'  // Local development
+  : '/api/chat'; // Production (Vercel will handle this)
 
 // Conversation history
 let conversationHistory = [
@@ -50,24 +51,20 @@ async function callOpenAI(userMessage) {
     content: userMessage
   });
 
-  const response = await fetch(OPENAI_API_URL, {
+  const response = await fetch(API_URL, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${OPENAI_API_KEY}`
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      model: 'gpt-3.5-turbo',
-      messages: conversationHistory,
-      temperature: 0.7,
-      max_tokens: 500
+      messages: conversationHistory
     })
   });
 
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
     console.error('API Response:', errorData);
-    throw new Error(`API error ${response.status}: ${errorData.error?.message || 'Unknown error'}`);
+    throw new Error(`API error ${response.status}: ${errorData.error || 'Unknown error'}`);
   }
 
   const data = await response.json();
