@@ -8,49 +8,266 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body class="bg-slate-50 text-slate-800">
-  <header class="bg-white shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <div class="flex items-center space-x-2">
-        <img src="assets/img/logo.svg" alt="Modern Homecare" class="h-10 w-10" />
-        <span class="text-2xl font-semibold text-sky-700">Modern Homecare</span>
-      </div>
-      <nav class="hidden md:flex space-x-6 text-slate-600 font-medium">
-        <a href="#services" class="hover:text-sky-700">Services</a>
-        <a href="#about" class="hover:text-sky-700">About</a>
-        <a href="#contact" class="hover:text-sky-700">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Integrated Header & Banner -->
+  <div class="hero-banner">
+    <!-- Floating Medical Icons -->
+    <div class="floating-icon">💉</div>
+    <div class="floating-icon">🩺</div>
+    <div class="floating-icon">💊</div>
+    <div class="floating-icon">❤️</div>
 
-  <section class="bg-gradient-to-br from-sky-50 to-sky-100 py-20 text-center">
-    <div class="max-w-6xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-        Compassionate care, right where you belong — at home.
-      </h1>
-      <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-        Our team of skilled nurses and therapists bring quality healthcare to your doorstep, helping you heal and thrive in comfort.
-      </p>
-      <div class="mt-8">
-        <a href="#contact" class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-lg shadow-md">Get in Touch</a>
+    <div class="max-w-6xl mx-auto">
+      <!-- Top Navigation -->
+      <div class="flex justify-between items-center p-4 pb-0">
+        <div class="logo-section">
+          <img src="assets/img/logo.svg" alt="Modern Homecare" class="logo-img" />
+          <div class="logo-text">
+            <span class="logo-title">Modern Homecare</span>
+            <span class="logo-tagline">Compassionate Care at Home</span>
+          </div>
+        </div>
+        <nav class="hidden md:flex space-x-6 text-white font-medium nav-links">
+          <a href="#services" class="hover:text-sky-200">Services</a>
+          <a href="#about" class="hover:text-sky-200">About</a>
+          <a href="#contact" class="hover:text-sky-200">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Banner Content -->
+      <div class="banner-content text-center py-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight banner-title">
+          <span class="fade-in-word" style="animation-delay: 0s;">Compassionate</span>
+          <span class="fade-in-word" style="animation-delay: 0.2s;">care,</span>
+          <span class="fade-in-word" style="animation-delay: 0.4s;">right</span>
+          <span class="fade-in-word" style="animation-delay: 0.6s;">where</span>
+          <span class="fade-in-word" style="animation-delay: 0.8s;">you</span>
+          <span class="fade-in-word" style="animation-delay: 1s;">belong</span>
+          <span class="fade-in-word" style="animation-delay: 1.2s;">—</span>
+          <span class="fade-in-word" style="animation-delay: 1.4s;">at</span>
+          <span class="fade-in-word" style="animation-delay: 1.6s;">home.</span>
+        </h1>
+        <p class="mt-6 text-lg text-sky-100 max-w-2xl mx-auto fade-in-text">
+          Our team of skilled nurses and therapists bring quality healthcare to your doorstep, helping you heal and thrive in comfort.
+        </p>
+        <div class="mt-8 fade-in-buttons">
+          <a href="#contact" class="cta-button">Get in Touch</a>
+          <a href="#services" class="cta-button-secondary"><span>View Services</span></a>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-container fade-in-buttons" style="animation-delay: 2.5s;">
+          <div class="stat-item">
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-label">Patients Served</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Care Available</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="13">0</span>
+            <span class="stat-label">Counties Covered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-overlay"></div>
+  </div>
+
+  <!-- Horizontal Menu Bar -->
+  <div class="menu-bar">
+    <div class="max-w-6xl mx-auto flex justify-center">
+      <div class="menu-item">
+        <span>Our Services</span>
+        <div class="menu-dropdown">
+          <a href="#services">Nursing Care</a>
+          <a href="#services">Therapy Services</a>
+          <a href="#services">Health Aide Support</a>
+          <a href="#services">Oncology Support</a>
+          <a href="#services">Diabetic Care</a>
+          <a href="#services">Medication Management</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span>About Us</span>
+        <div class="menu-dropdown">
+          <a href="#about">Our Mission</a>
+          <a href="#about">Why Choose Us</a>
+          <a href="#about">Service Areas</a>
+          <a href="#about">Our Team</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span>Patient Resources</span>
+        <div class="menu-dropdown">
+          <a href="#services">Getting Started</a>
+          <a href="#services">Insurance & Billing</a>
+          <a href="#services">FAQs</a>
+          <a href="#contact">Contact Support</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span>Contact</span>
+        <div class="menu-dropdown">
+          <a href="#contact">Phone: (281) 501-0350</a>
+          <a href="#contact">After Hours: (888) 510-1879</a>
+          <a href="mailto:intake@modernhh.com">Email Us</a>
+          <a href="#contact">Office Location</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Medical Images Showcase -->
+  <section class="medical-showcase">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="medical-image-card">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="Medical Technology" class="medical-img" />
+          <div class="medical-overlay">
+            <h3>Advanced Care</h3>
+            <p>State-of-the-art medical technology</p>
+          </div>
+        </div>
+        <div class="medical-image-card">
+          <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop" alt="Healthcare Professional" class="medical-img" />
+          <div class="medical-overlay">
+            <h3>Expert Team</h3>
+            <p>Licensed healthcare professionals</p>
+          </div>
+        </div>
+        <div class="medical-image-card">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&h=400&fit=crop" alt="Patient Care" class="medical-img" />
+          <div class="medical-overlay">
+            <h3>Compassionate Care</h3>
+            <p>Personalized patient support</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-center text-slate-900 mb-8">Our Services</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="service-card"><h3>Nursing Care</h3><p>Professional medical care for recovery, wound management, and chronic conditions.</p></div>
-      <div class="service-card"><h3>Therapy Services</h3><p>Physical, speech, and occupational therapy to restore strength and independence.</p></div>
-      <div class="service-card"><h3>Health Aide Support</h3><p>Personal care assistance to maintain comfort and dignity at home.</p></div>
-      <div class="service-card"><h3>Oncology Support</h3><p>Specialized in-home support for patients undergoing cancer treatment.</p></div>
+  <section id="services" class="services-section">
+    <div class="max-w-6xl mx-auto px-4 py-20">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 gradient-text">Our Medical Services</h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Comprehensive home healthcare solutions tailored to your needs, delivered by licensed professionals with compassion and expertise.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="service-card">
+          <div class="service-icon">🏥</div>
+          <h3>Skilled Nursing</h3>
+          <p>Expert medical care for wound management, IV therapy, post-surgical recovery, and chronic disease management.</p>
+          <ul class="service-features">
+            <li>Wound care & management</li>
+            <li>IV therapy & injections</li>
+            <li>Medication administration</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💪</div>
+          <h3>Physical Therapy</h3>
+          <p>Personalized rehabilitation programs to restore mobility, strength, and independence after injury or surgery.</p>
+          <ul class="service-features">
+            <li>Post-surgical rehabilitation</li>
+            <li>Pain management</li>
+            <li>Mobility training</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🗣️</div>
+          <h3>Speech Therapy</h3>
+          <p>Professional therapy for speech, language, and swallowing disorders to improve communication and safety.</p>
+          <ul class="service-features">
+            <li>Swallowing disorders</li>
+            <li>Language therapy</li>
+            <li>Cognitive training</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤲</div>
+          <h3>Occupational Therapy</h3>
+          <p>Helping patients regain the skills needed for daily living and maintaining independence at home.</p>
+          <ul class="service-features">
+            <li>Daily living skills</li>
+            <li>Home safety assessment</li>
+            <li>Adaptive equipment training</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>Personal Care Aide</h3>
+          <p>Compassionate assistance with daily activities, personal hygiene, and maintaining comfort and dignity.</p>
+          <ul class="service-features">
+            <li>Personal hygiene assistance</li>
+            <li>Meal preparation</li>
+            <li>Light housekeeping</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎗️</div>
+          <h3>Oncology Support</h3>
+          <p>Specialized care for cancer patients including symptom management, emotional support, and treatment coordination.</p>
+          <ul class="service-features">
+            <li>Symptom management</li>
+            <li>Chemotherapy support</li>
+            <li>Palliative care</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="max-w-6xl mx-auto px-4 py-20">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 text-white">What Our Patients Say</h2>
+        <p class="text-lg text-sky-100">Hear from families we've had the privilege to serve</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The nurses at Modern Homecare treated my mother with such compassion and professionalism. They made her recovery at home comfortable and stress-free for our entire family."</p>
+          <div class="testimonial-author">
+            <strong>Sarah M.</strong>
+            <span>Daughter of Patient</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"After my knee surgery, the physical therapist helped me regain my mobility faster than I expected. The personalized care plan made all the difference in my recovery."</p>
+          <div class="testimonial-author">
+            <strong>Robert J.</strong>
+            <span>Post-Surgery Patient</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Modern Homecare's speech therapist was patient and encouraging with my father after his stroke. We saw remarkable improvements in just a few weeks."</p>
+          <div class="testimonial-author">
+            <strong>Jennifer L.</strong>
+            <span>Family Member</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="about" class="bg-white py-16">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-      <img src="assets/img/care.png" alt="Care" class="rounded-xl shadow-lg"/>
+      <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&h=600&fit=crop" alt="Care" class="rounded-xl shadow-lg"/>
       <div>
-        <h2 class="text-3xl font-bold text-slate-900 mb-4">Why Choose Modern Homecare</h2>
+        <h2 class="text-3xl font-bold mb-4 gradient-text">Why Choose Modern Homecare</h2>
         <ul class="space-y-3 text-slate-600">
           <li>• Licensed professionals dedicated to compassionate care</li>
           <li>• Customized care plans for each patient’s needs</li>
@@ -92,6 +309,7 @@
   </div>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/banner-animations.js"></script>
   <script src="assets/js/chat.js"></script>
 </body>
 </html>
